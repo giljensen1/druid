@@ -1,0 +1,66 @@
+==================================================
+('Squid information for ', '2018-08-01 15:35')
+==================================================
+start *****************************************************************
+  10.141.224.126 
+uptime
+ 21:35:09 up 33 days, 21:19,  1 user,  load average: 0.00, 0.01, 0.05
+
+uptime
+ 21:35:09 up 33 days, 21:19,  1 user,  load average: 0.00, 0.01, 0.05
+
+hostname
+cpoepv0004.cergy.visteon.com
+
+top -n 1
+[?1h=[?25l[H[2J(B[mtop - 21:35:09 up 33 days, 21:19,  1 user,  load average: 0.00, 0.01, 0.05(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 113 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 112 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  1.6 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 98.4 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m 12139344 (B[m[39;49mtotal,(B[m[39;49m[1m   165232 (B[m[39;49mfree,(B[m[39;49m[1m  9184140 (B[m[39;49mused,(B[m[39;49m[1m  2789972 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m 16777212 (B[m[39;49mtotal,(B[m[39;49m[1m 16653440 (B[m[39;49mfree,(B[m[39;49m[1m   123772 (B[m[39;49mused.(B[m[39;49m[1m  2588424 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     (B[m[39;49m[K
+(B[m    1 root      20   0  190920   2672   1672 S   0.0  0.0   2:20.53 systemd     (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.47 kthreadd    (B[m[39;49m[K
+(B[m    3 root      20   0       0      0      0 S   0.0  0.0   0:06.13 ksoftirqd/0 (B[m[39;49m[K
+(B[m    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:+ (B[m[39;49m[K
+(B[m    7 root      rt   0       0      0      0 S   0.0  0.0   0:00.22 migration/0 (B[m[39;49m[K
+(B[m    8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh      (B[m[39;49m[K
+(B[m    9 root      20   0       0      0      0 S   0.0  0.0   1:36.16 rcu_sched   (B[m[39;49m[K
+(B[m   10 root      rt   0       0      0      0 S   0.0  0.0   0:16.31 watchdog/0  (B[m[39;49m[K
+(B[m   11 root      rt   0       0      0      0 S   0.0  0.0   0:11.17 watchdog/1  (B[m[39;49m[K
+(B[m   12 root      rt   0       0      0      0 S   0.0  0.0   0:00.21 migration/1 (B[m[39;49m[K
+(B[m   13 root      20   0       0      0      0 S   0.0  0.0   0:06.59 ksoftirqd/1 (B[m[39;49m[K
+(B[m   15 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:+ (B[m[39;49m[K
+(B[m   16 root      rt   0       0      0      0 S   0.0  0.0   0:11.23 watchdog/2  (B[m[39;49m[K
+(B[m   17 root      rt   0       0      0      0 S   0.0  0.0   0:00.12 migration/2 (B[m[39;49m[K
+(B[m   18 root      20   0       0      0      0 S   0.0  0.0   0:05.48 ksoftirqd/2 (B[m[39;49m[K
+(B[m   20 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/2:+ (B[m[39;49m[K
+(B[m   21 root      rt   0       0      0      0 S   0.0  0.0   0:11.12 watchdog/3  (B[m[39;49m[K[?1l>[25;1H
+[?12l[?25h[K
+sudo free -t -m
+              total        used        free      shared  buff/cache   available
+Mem:          11854        8969         160          23        2724        2527
+Swap:         16383         120       16263
+Total:        28238        9090       16424
+
+df -h
+Filesystem                      Size  Used Avail Use% Mounted on
+/dev/mapper/root_vg-lv_root      81G  2.3G   75G   3% /
+devtmpfs                        5.8G     0  5.8G   0% /dev
+tmpfs                           5.8G     0  5.8G   0% /dev/shm
+tmpfs                           5.8G   25M  5.8G   1% /run
+tmpfs                           5.8G     0  5.8G   0% /sys/fs/cgroup
+/dev/sda1                       976M  113M  797M  13% /boot
+/dev/mapper/data_vg-lv_ugsdata  493G   33G  435G   7% /ugsdata
+tmpfs                           1.2G     0  1.2G   0% /run/user/1168501
+
+end*****************************************************************
+
+
+
+
+
+
+
+

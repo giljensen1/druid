@@ -1,0 +1,39 @@
+<!DOCTYPE html><head><meta charset='utf-8'><title>Squid Stats</title></head><body><table><tr><td>==================================================
+Squid information for 2018-08-02 14:13
+==================================================
+</td></tr></table><body><table><tr><td>start *****************************************************************<br><br><br>IP Address =   10.141.224.126 <br><br></td></tr></table><body><table><tr><td>hostname
+cpoepv0004.cergy.visteon.com
+<br>uptime
+ 20:13:51 up 34 days, 19:58,  1 user,  load average: 0.00, 0.01, 0.05
+</tr></td><tr><td></tr></td><tr><td>top -n 1 | head
+[?1h=[?25l[H[2J(B[mtop - 20:13:51 up 34 days, 19:58,  1 user,  load average: 0.00, 0.01, 0.05(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 112 (B[m[39;49mtotal,(B[m[39;49m[1m   3 (B[m[39;49mrunning,(B[m[39;49m[1m 109 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  1.6 (B[m[39;49mus,(B[m[39;49m[1m  1.6 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 96.9 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m 12139344 (B[m[39;49mtotal,(B[m[39;49m[1m   155900 (B[m[39;49mfree,(B[m[39;49m[1m  9184932 (B[m[39;49mused,(B[m[39;49m[1m  2798512 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m 16777212 (B[m[39;49mtotal,(B[m[39;49m[1m 16653444 (B[m[39;49mfree,(B[m[39;49m[1m   123768 (B[m[39;49mused.(B[m[39;49m[1m  2587388 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     (B[m[39;49m[K
+(B[m    1 root      20   0  190920   2672   1672 S   0.0  0.0   2:26.11 systemd     (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.49 kthreadd    (B[m[39;49m[K
+(B[m    3 root      20   0       0      0      0 S   0.0  0.0   0:06.21 ksoftirqd/0 (B[m[39;49m[K
+<br><br>sudo /etc/init.d/squid status
+sudo: /etc/init.d/squid: command not found
+<br><br>sudo free -t -m
+              total        used        free      shared  buff/cache   available
+Mem:          11854        8970         151          23        2732        2525
+Swap:         16383         120       16263
+Total:        28238        9091       16414
+<br><br>df -h
+Filesystem                      Size  Used Avail Use% Mounted on
+/dev/mapper/root_vg-lv_root      81G  2.3G   75G   3% /
+devtmpfs                        5.8G     0  5.8G   0% /dev
+tmpfs                           5.8G     0  5.8G   0% /dev/shm
+tmpfs                           5.8G   25M  5.8G   1% /run
+tmpfs                           5.8G     0  5.8G   0% /sys/fs/cgroup
+/dev/sda1                       976M  113M  797M  13% /boot
+/dev/mapper/data_vg-lv_ugsdata  493G   33G  435G   7% /ugsdata
+tmpfs                           1.2G     0  1.2G   0% /run/user/1168501
+</td></tr></table><br>end*****************************************************************<br><br><br>
+
+
+

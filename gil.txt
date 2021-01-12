@@ -1,0 +1,42 @@
+==================================================
+Squid information for 2018-08-03 09:14
+==================================================
+start *****************************************************************
+
+IP Address =   10.141.224.126 
+
+hostname
+cpoepv0004.cergy.visteon.com
+
+uptime
+ 15:14:56 up 35 days, 14:59,  1 user,  load average: 0.00, 0.01, 0.05
+
+uptime
+ 15:14:56 up 35 days, 14:59,  1 user,  load average: 0.00, 0.01, 0.05
+
+sudo /etc/init.d/squid status
+sudo: /etc/init.d/squid: command not found
+
+sudo free -t -m
+              total        used        free      shared  buff/cache   available
+Mem:          11854        8970         234          23        2649        2525
+Swap:         16383         120       16263
+Total:        28238        9091       16497
+
+ testdf -h
+Filesystem                      Size  Used Avail Use% Mounted on
+/dev/mapper/root_vg-lv_root      81G  2.3G   75G   3% /
+devtmpfs                        5.8G     0  5.8G   0% /dev
+tmpfs                           5.8G     0  5.8G   0% /dev/shm
+tmpfs                           5.8G   25M  5.8G   1% /run
+tmpfs                           5.8G     0  5.8G   0% /sys/fs/cgroup
+/dev/sda1                       976M  113M  797M  13% /boot
+/dev/mapper/data_vg-lv_ugsdata  493G   33G  435G   7% /ugsdata
+tmpfs                           1.2G     0  1.2G   0% /run/user/1168501
+grep cpu /proc/stat | awk {usage = ($2+$4) * 100 / ($2+$4+$5)} END f. write("usage")
+-bash: syntax error near unexpected token `('
+
+end*****************************************************************
+
+
+

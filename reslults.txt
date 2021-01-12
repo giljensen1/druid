@@ -1,0 +1,79 @@
+Section: SERVERS
+  Options: ['server0', 'server1', 'server2', 'server3', 'server4', 'server5', 'server6', 'server7', 'server8', 'server9', 'server10', 'server11', 'server12', 'server13']
+start *****************************************************************
+  10.141.224.126 
+uptime
+ 16:39:48 up 27 days, 16:24,  2 users,  load average: 0.08, 0.03, 0.05
+
+df -h
+Filesystem                      Size  Used Avail Use% Mounted on
+/dev/mapper/root_vg-lv_root      81G  2.3G   75G   3% /
+devtmpfs                        5.8G     0  5.8G   0% /dev
+tmpfs                           5.8G     0  5.8G   0% /dev/shm
+tmpfs                           5.8G   17M  5.8G   1% /run
+tmpfs                           5.8G     0  5.8G   0% /sys/fs/cgroup
+/dev/sda1                       976M  113M  797M  13% /boot
+/dev/mapper/data_vg-lv_ugsdata  493G   32G  436G   7% /ugsdata
+tmpfs                           1.2G     0  1.2G   0% /run/user/1168501
+
+sudo ls -l /var/log/squid
+total 406992
+-rw-r----- 1 proxy proxy 275361225 Jul 26 16:39 access.log
+-rw-r----- 1 proxy proxy   2303834 Jul 26 16:30 cache.log
+-rw-r----- 1 squid squid        83 May 30 01:54 cache.log-20180603.gz
+-rw-r--r-- 1 root  root       1774 Jun  4 16:20 squid.out
+-rw-r----- 1 proxy proxy 139071265 Jul 26 16:39 store.log
+
+sudo /etc/init.d/squid status
+sudo: /etc/init.d/squid: command not found
+
+end*****************************************************************
+start *****************************************************************
+  10.218.200.204 
+uptime
+ 20:09:36 up 256 days, 16:44,  3 users,  load average: 0.74, 0.51, 0.41
+
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/vg_root-lv_root
+                       41G  1.7G   37G   5% /
+/dev/mapper/vg_root-lv_usr
+                      3.0G  1.8G  997M  65% /usr
+/dev/mapper/vg_root-lv_var
+                      487G  370G   92G  81% /var
+/dev/mapper/vg_root-lv_varlog
+                      9.7G  2.4G  6.8G  27% /var/log
+/dev/mapper/vg_root-lv_opt
+                      992M  246M  696M  27% /opt
+/dev/mapper/vg_root-lv_tmp
+                      2.0G  131M  1.8G   7% /tmp
+/dev/mapper/vg_root-lv_home
+                      4.9G  592M  4.1G  13% /home
+/dev/sda1             190M   31M  150M  18% /boot
+tmpfs                  16G     0   16G   0% /dev/shm
+
+sudo ls -l /var/log/squid
+total 326604
+-rw-r--r-- 1 root  root          0 Apr 26  2015 access_converted.log
+-rw-r--r-- 1 root  root   62392241 Apr 26  2015 access_converted.log.1.gz
+-rw-r----- 1 squid squid         0 Jun 17 04:02 access.log
+-rw-r----- 1 squid squid      2716 Jun 17 04:02 access.log.1.gz
+-rw-r----- 1 squid squid      5069 Jun  3 04:02 access.log.2.gz
+-rw-r----- 1 squid squid      3874 May 31 04:02 access.log.3.gz
+-rw-r----- 1 squid squid 124929973 Apr 15 04:03 access.log.4.gz
+-rw-r----- 1 squid squid 146702593 Apr  8 04:03 access.log.5.gz
+-rw-r----- 1 squid squid      4918 Jul 22 04:02 cache.log
+-rw-r----- 1 squid squid       682 Jul 22 04:02 cache.log.1.gz
+-rw-r----- 1 squid squid       679 Jul 15 04:02 cache.log.2.gz
+-rw-r----- 1 squid squid       684 Jul  8 04:02 cache.log.3.gz
+-rw-r----- 1 squid squid       680 Jul  1 04:02 cache.log.4.gz
+-rw-r----- 1 squid squid       684 Jun 24 04:02 cache.log.5.gz
+-rw-r--r-- 1 root  root       3057 Mar 30 22:01 squid.out
+-rw-r--r-- 1 root  root          0 Nov 12  2017 squidstart.log
+-rw-r--r-- 1 root  root         61 Nov 12  2017 squidstart.log.1.gz
+-rw-r--r-- 1 root  root         61 Oct 11  2017 squidstart.log.2.gz
+-rw-r--r-- 1 root  root         61 Jun  4  2017 squidstart.log.3.gz
+-rw-r--r-- 1 root  root         61 May 28  2017 squidstart.log.4.gz
+-rw-r--r-- 1 root  root         61 Nov  6  2016 squidstart.log.5.gz
+-rw-r--r-- 1 root  root          0 Mar  9  2014 squidstart-z.log
+

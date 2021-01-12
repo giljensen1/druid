@@ -1,0 +1,13 @@
+chipd005.chennai.visteon.com 
+chipd030.chennai.visteon.com
+RTCproxy.ctc.visteon.com
+vtcepv0003.vtci.visteon.com
+a713s033.karlsruhe.visteon.com
+cmvpd017.chelmsford.visteon.com
+kevpd004.kerpen.visteon.com
+glcpd057.vlgdc.visteon.com
+jazzsofia.sofia.visteon.com
+jeypd005.yokohama.visteon.com
+QROPD005.queretaro.visteon.com
+chipd029.chennai.visteon.com
+
