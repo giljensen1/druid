@@ -2,7 +2,7 @@ from pexpect import pxssh
 import getpass
 
 import ConfigParser
-import io
+#import io
 import datetime
 import os
 
